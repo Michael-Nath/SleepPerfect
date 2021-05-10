@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A57F3B9264760C9004D0802 /* SleepPerfectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3B8264760C9004D0802 /* SleepPerfectApp.swift */; };
+		5A57F3BB264760C9004D0802 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3BA264760C9004D0802 /* ContentView.swift */; };
+		5A57F3BD264760D1004D0802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A57F3BC264760D1004D0802 /* Assets.xcassets */; };
+		5A57F3C0264760D1004D0802 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A57F3BF264760D1004D0802 /* Preview Assets.xcassets */; };
+		5A57F3C2264760D1004D0802 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3C1264760D1004D0802 /* Persistence.swift */; };
+		5A57F3C5264760D1004D0802 /* SleepPerfect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3C3264760D1004D0802 /* SleepPerfect.xcdatamodeld */; };
+		5A57F3D0264760D1004D0802 /* SleepPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3CF264760D1004D0802 /* SleepPerfectTests.swift */; };
+		5A57F3DB264760D1004D0802 /* SleepPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3DA264760D1004D0802 /* SleepPerfectUITests.swift */; };
+		5A57F3E92647610D004D0802 /* SleepDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3E82647610D004D0802 /* SleepDetail.swift */; };
+		5A57F3EB2647612D004D0802 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3EA2647612D004D0802 /* Sleep.swift */; };
+		5A57F3ED2647614D004D0802 /* SleepSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57F3EC2647614D004D0802 /* SleepSetter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A57F3CC264760D1004D0802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A57F3AD264760C9004D0802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A57F3B4264760C9004D0802;
+			remoteInfo = SleepPerfect;
+		};
+		5A57F3D7264760D1004D0802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A57F3AD264760C9004D0802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A57F3B4264760C9004D0802;
+			remoteInfo = SleepPerfect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A57F3B5264760C9004D0802 /* SleepPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A57F3B8264760C9004D0802 /* SleepPerfectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPerfectApp.swift; sourceTree = "<group>"; };
+		5A57F3BA264760C9004D0802 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A57F3BC264760D1004D0802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A57F3BF264760D1004D0802 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A57F3C1264760D1004D0802 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5A57F3C4264760D1004D0802 /* SleepPerfect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepPerfect.xcdatamodel; sourceTree = "<group>"; };
+		5A57F3C6264760D1004D0802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A57F3CB264760D1004D0802 /* SleepPerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepPerfectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A57F3CF264760D1004D0802 /* SleepPerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPerfectTests.swift; sourceTree = "<group>"; };
+		5A57F3D1264760D1004D0802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A57F3D6264760D1004D0802 /* SleepPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A57F3DA264760D1004D0802 /* SleepPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPerfectUITests.swift; sourceTree = "<group>"; };
+		5A57F3DC264760D1004D0802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A57F3E82647610D004D0802 /* SleepDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDetail.swift; sourceTree = "<group>"; };
+		5A57F3EA2647612D004D0802 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		5A57F3EC2647614D004D0802 /* SleepSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A57F3B2264760C9004D0802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3C8264760D1004D0802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3D3264760D1004D0802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A57F3AC264760C9004D0802 = {
+			isa = PBXGroup;
+			children = (
+				5A57F3B7264760C9004D0802 /* SleepPerfect */,
+				5A57F3CE264760D1004D0802 /* SleepPerfectTests */,
+				5A57F3D9264760D1004D0802 /* SleepPerfectUITests */,
+				5A57F3B6264760C9004D0802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A57F3B6264760C9004D0802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A57F3B5264760C9004D0802 /* SleepPerfect.app */,
+				5A57F3CB264760D1004D0802 /* SleepPerfectTests.xctest */,
+				5A57F3D6264760D1004D0802 /* SleepPerfectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A57F3B7264760C9004D0802 /* SleepPerfect */ = {
+			isa = PBXGroup;
+			children = (
+				5A57F3B8264760C9004D0802 /* SleepPerfectApp.swift */,
+				5A57F3BA264760C9004D0802 /* ContentView.swift */,
+				5A57F3BC264760D1004D0802 /* Assets.xcassets */,
+				5A57F3C1264760D1004D0802 /* Persistence.swift */,
+				5A57F3C6264760D1004D0802 /* Info.plist */,
+				5A57F3C3264760D1004D0802 /* SleepPerfect.xcdatamodeld */,
+				5A57F3BE264760D1004D0802 /* Preview Content */,
+				5A57F3E82647610D004D0802 /* SleepDetail.swift */,
+				5A57F3EA2647612D004D0802 /* Sleep.swift */,
+				5A57F3EC2647614D004D0802 /* SleepSetter.swift */,
+			);
+			path = SleepPerfect;
+			sourceTree = "<group>";
+		};
+		5A57F3BE264760D1004D0802 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A57F3BF264760D1004D0802 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A57F3CE264760D1004D0802 /* SleepPerfectTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A57F3CF264760D1004D0802 /* SleepPerfectTests.swift */,
+				5A57F3D1264760D1004D0802 /* Info.plist */,
+			);
+			path = SleepPerfectTests;
+			sourceTree = "<group>";
+		};
+		5A57F3D9264760D1004D0802 /* SleepPerfectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A57F3DA264760D1004D0802 /* SleepPerfectUITests.swift */,
+				5A57F3DC264760D1004D0802 /* Info.plist */,
+			);
+			path = SleepPerfectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A57F3B4264760C9004D0802 /* SleepPerfect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A57F3DF264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfect" */;
+			buildPhases = (
+				5A57F3B1264760C9004D0802 /* Sources */,
+				5A57F3B2264760C9004D0802 /* Frameworks */,
+				5A57F3B3264760C9004D0802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepPerfect;
+			productName = SleepPerfect;
+			productReference = 5A57F3B5264760C9004D0802 /* SleepPerfect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A57F3CA264760D1004D0802 /* SleepPerfectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A57F3E2264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfectTests" */;
+			buildPhases = (
+				5A57F3C7264760D1004D0802 /* Sources */,
+				5A57F3C8264760D1004D0802 /* Frameworks */,
+				5A57F3C9264760D1004D0802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A57F3CD264760D1004D0802 /* PBXTargetDependency */,
+			);
+			name = SleepPerfectTests;
+			productName = SleepPerfectTests;
+			productReference = 5A57F3CB264760D1004D0802 /* SleepPerfectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A57F3D5264760D1004D0802 /* SleepPerfectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A57F3E5264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfectUITests" */;
+			buildPhases = (
+				5A57F3D2264760D1004D0802 /* Sources */,
+				5A57F3D3264760D1004D0802 /* Frameworks */,
+				5A57F3D4264760D1004D0802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A57F3D8264760D1004D0802 /* PBXTargetDependency */,
+			);
+			name = SleepPerfectUITests;
+			productName = SleepPerfectUITests;
+			productReference = 5A57F3D6264760D1004D0802 /* SleepPerfectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A57F3AD264760C9004D0802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5A57F3B4264760C9004D0802 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5A57F3CA264760D1004D0802 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5A57F3B4264760C9004D0802;
+					};
+					5A57F3D5264760D1004D0802 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5A57F3B4264760C9004D0802;
+					};
+				};
+			};
+			buildConfigurationList = 5A57F3B0264760C9004D0802 /* Build configuration list for PBXProject "SleepPerfect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A57F3AC264760C9004D0802;
+			productRefGroup = 5A57F3B6264760C9004D0802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A57F3B4264760C9004D0802 /* SleepPerfect */,
+				5A57F3CA264760D1004D0802 /* SleepPerfectTests */,
+				5A57F3D5264760D1004D0802 /* SleepPerfectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A57F3B3264760C9004D0802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A57F3C0264760D1004D0802 /* Preview Assets.xcassets in Resources */,
+				5A57F3BD264760D1004D0802 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3C9264760D1004D0802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3D4264760D1004D0802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A57F3B1264760C9004D0802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A57F3C2264760D1004D0802 /* Persistence.swift in Sources */,
+				5A57F3BB264760C9004D0802 /* ContentView.swift in Sources */,
+				5A57F3B9264760C9004D0802 /* SleepPerfectApp.swift in Sources */,
+				5A57F3C5264760D1004D0802 /* SleepPerfect.xcdatamodeld in Sources */,
+				5A57F3E92647610D004D0802 /* SleepDetail.swift in Sources */,
+				5A57F3EB2647612D004D0802 /* Sleep.swift in Sources */,
+				5A57F3ED2647614D004D0802 /* SleepSetter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3C7264760D1004D0802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A57F3D0264760D1004D0802 /* SleepPerfectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A57F3D2264760D1004D0802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A57F3DB264760D1004D0802 /* SleepPerfectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A57F3CD264760D1004D0802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A57F3B4264760C9004D0802 /* SleepPerfect */;
+			targetProxy = 5A57F3CC264760D1004D0802 /* PBXContainerItemProxy */;
+		};
+		5A57F3D8264760D1004D0802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A57F3B4264760C9004D0802 /* SleepPerfect */;
+			targetProxy = 5A57F3D7264760D1004D0802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A57F3DD264760D1004D0802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A57F3DE264760D1004D0802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A57F3E0264760D1004D0802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SleepPerfect/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SleepPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A57F3E1264760D1004D0802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SleepPerfect/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SleepPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A57F3E3264760D1004D0802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				INFOPLIST_FILE = SleepPerfectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepPerfect.app/SleepPerfect";
+			};
+			name = Debug;
+		};
+		5A57F3E4264760D1004D0802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				INFOPLIST_FILE = SleepPerfectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepPerfect.app/SleepPerfect";
+			};
+			name = Release;
+		};
+		5A57F3E6264760D1004D0802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				INFOPLIST_FILE = SleepPerfectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepPerfect;
+			};
+			name = Debug;
+		};
+		5A57F3E7264760D1004D0802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UA435HD89;
+				INFOPLIST_FILE = SleepPerfectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.SleepPerfectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepPerfect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A57F3B0264760C9004D0802 /* Build configuration list for PBXProject "SleepPerfect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A57F3DD264760D1004D0802 /* Debug */,
+				5A57F3DE264760D1004D0802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A57F3DF264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A57F3E0264760D1004D0802 /* Debug */,
+				5A57F3E1264760D1004D0802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A57F3E2264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A57F3E3264760D1004D0802 /* Debug */,
+				5A57F3E4264760D1004D0802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A57F3E5264760D1004D0802 /* Build configuration list for PBXNativeTarget "SleepPerfectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A57F3E6264760D1004D0802 /* Debug */,
+				5A57F3E7264760D1004D0802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A57F3C3264760D1004D0802 /* SleepPerfect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A57F3C4264760D1004D0802 /* SleepPerfect.xcdatamodel */,
+			);
+			currentVersion = 5A57F3C4264760D1004D0802 /* SleepPerfect.xcdatamodel */;
+			path = SleepPerfect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A57F3AD264760C9004D0802 /* Project object */;
+}
