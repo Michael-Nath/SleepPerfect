@@ -2,13 +2,13 @@ import SwiftUI
 import CoreData
 
 struct SleepSetter: View {
-    @State private var isSleeping : Bool = false
-    @State private var isShowingSleepWarning : Bool = false
+    @State private var isSleeping : Bool = false // State var to manage start/end of sleep session
+    @State private var isShowingSleepWarning : Bool = false // State var to manage action sheet
     @State private var sleepStart: Date = Date()
     @State private var sleepEnd: Date = Date()
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.managedObjectContext) private var viewContext // Retreieve app managed object context to add created sleep logs
     
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() // timer will update the elapsed time every second
     let persistenceController = PersistenceController.shared
     
     func handleSleep() {
@@ -49,31 +49,37 @@ struct SleepSetter: View {
             else {
                 Toggle(isOn: $isShowingSleepWarning) {
                     Text("Stop Recording Sleep Session" )
-                }.onChange(of: isShowingSleepWarning) {
-                    _ in
-                        handleSleep()
-                        isShowingSleepWarning.toggle()
+                }.alert(isPresented: $isShowingSleepWarning) {
+                    Alert(
+                        title: Text("Sleep Saved!"),
+                        message: Text("This sleep session has been automatically saved."),
+                        dismissButton: .default(Text("Thanks!")) {
+                            handleSleep()
+                        }
+                    )
                 }
             }
         }
     }
     
     private func addSleep(sleepStart: Date, sleepEnd: Date, date: Date) {
-        let newSleep = Sleep(context: viewContext)
-        newSleep.startTime = sleepStart
-        newSleep.endTime = sleepEnd
-        newSleep.date = date
-        do {
-            try viewContext.save()
-        } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        withAnimation {
+            let newSleep = Sleep(context: viewContext)
+            newSleep.startTime = sleepStart
+            newSleep.endTime = sleepEnd
+            newSleep.date = date
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
         }
     }
 }
 
 struct SleepSetter_Previews: PreviewProvider {
     static var previews: some View {
-        SleepSetter()
+        SleepSetter().preferredColorScheme(.dark).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
